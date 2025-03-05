@@ -1,6 +1,6 @@
-// Verificar si hay resultados
+
 if ($result->num_rows > 0) {
-  // Mostrar los datos en una tabla
+  
   echo "<style>
           table { width: 100%; border-collapse: collapse; }
           th, td { padding: 8px 12px; border: 1px solid #ddd; text-align: left; }
@@ -9,7 +9,7 @@ if ($result->num_rows > 0) {
 
   echo "<table><tr><th>Nombre</th><th>Apellido Paterno</th><th>Apellido Materno</th><th>Edad</th><th>Telefono</th><th>Email</th></tr>";
 
-  // Mostrar los datos de cada fila
+ 
   while($row = $result->fetch_assoc()) {
     echo "<tr>
             <td>" . $row["nombre"] . "</td>
