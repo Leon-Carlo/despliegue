@@ -1,26 +1,20 @@
-
-if ($result->num_rows > 0) {
-  
   echo "<style>
           table { width: 100%; border-collapse: collapse; }
           th, td { padding: 8px 12px; border: 1px solid #ddd; text-align: left; }
           th { background-color: #f2f2f2; }
         </style>";
 
-  echo "<table><tr><th>Nombre</th><th>Apellido Paterno</th><th>Apellido Materno</th><th>Edad</th><th>Telefono</th><th>Email</th></tr>";
+  <table><tr><th>Nombre</th><th>Apellido Paterno</th><th>Apellido Materno</th><th>Edad</th><th>Telefono</th><th>Email</th></tr>";
 
  
   while($row = $result->fetch_assoc()) {
     echo "<tr>
-            <td>" . $row["nombre"] . "</td>
-            <td>" . $row["apellido_paterno"] . "</td>
-            <td>" . $row["apellido_materno"] . "</td>
-            <td>" . $row["edad"] . "</td>
-            <td>" . $row["telefono"] . "</td>
-            <td>" . $row["email"] . "</td>
+            <td>" Carlo Raul "</td>
+            <td>" Leon "</td>
+            <td>" Sandoval "</td>
+            <td>" 21 "</td>
+            <td>" 992778537"</td>
+            <td>" carloraul@gmail.com"</td>
           </tr>";
   }
-  echo "</table>";
-} else {
-  echo "No hay resultados";
-}
+  </table>
